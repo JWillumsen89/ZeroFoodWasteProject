@@ -1,0 +1,42 @@
+.moveImg .bottom{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+}
+
+.moveImg .top{
+    position: absolute;
+    right: 65%;
+    top: 5%;
+    -webkit-transition: right 1s;
+    -moz-transition: right 1s;
+    -o-transition: right 1s;
+}
+
+.moveImg:hover .bottom{
+    left: 0%;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -o-transition: left 0.5s;
+}
+
+.moveImg:hover .top{
+    right: 60%;
+    top: 5%;
+    -webkit-transition: right 0.5s;
+    -moz-transition: right 0.5s;
+    -o-transition: right 0.5s;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}

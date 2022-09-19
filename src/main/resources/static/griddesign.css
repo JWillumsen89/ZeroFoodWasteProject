@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+
+}
+.bg{
+    background-image: url("background.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style the header */
+.middleheader {
+    grid-area: middleheader;
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+}
+
+.leftheader{
+    grid-area: leftheader;
+    position:relative; left: 20px;
+}
+
+.rightheader{
+    grid-area: rightheader;
+}
+
+.middleheader,
+.rightheader,
+.leftheader {
+    height: 15vh;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'leftheader leftheader middleheader middleheader middleheader middleheader rightheader rightheader'
+    'leftcolumn leftcolumn middlecolumn middlecolumn middlecolumn middlecolumn rightcolumn rightcolumn'
+    'footer footer footer footer footer footer footer footer';
+}
+
+.leftcolumn,
+.middlecolumn,
+.rightcolumn {
+height: 75vh;
+}
+
+
+.leftcolumn {
+    grid-area: leftcolumn;
+   position:relative; left: 20px;
+}
+
+
+.middlecolumn {
+    grid-area: middlecolumn;
+}
+
+
+.rightcolumn {
+    grid-area: rightcolumn;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    height: 10vh;
+    background: black;
+    opacity: 0.1;
+    border-radius: 20px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container  {
+        grid-template-areas:
+      'leftheader middleheader middleheader middleheader middleheader rightheader'
+      'leftcolumn middlecolumn middlecolumn middlecolumn middlecolumn rightcolumn'
+      'footer footer footer footer footer footer';
+    }
+}
