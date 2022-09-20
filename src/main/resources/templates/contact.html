@@ -7,9 +7,32 @@
   <link rel="stylesheet" th:href="@{griddesign.css}" href="../static/griddesign.css">
   <link rel="stylesheet" th:href="@{btn.css}" href="../static/btn.css">
   <link rel="stylesheet" th:href="@{dropdownmenu.css}" href="../static/dropdownmenu.css">
+
+  <style>
+    div {
+      margin-bottom: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+    }
+  </style>
 </head>
 <body>
-<h1>TEST CONTACT</h1>
-
+<form action="/form/submit" id="userform">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+  </div>
+  <div>
+    <label for="email">Your Age</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" />
+  </div>
+  <div>
+    <label>Enter Your Country</label>
+  <textarea style="resize: none; height: 100px; width: 150px" name="comment" form="userform" placeholder="Enter your comment or question here....."></textarea>
+  </div>
+  <input type="submit" value="Submit" />
+</form>
 </body>
 </html>
