@@ -37,9 +37,9 @@ public class MainController {
     return "shop";
   }
 
-  @GetMapping("/gallery")
+  @GetMapping("/fakta")
   public String gallerySite() {
-    return "gallery";
+    return "fakta";
   }
 
   @GetMapping("/events")
