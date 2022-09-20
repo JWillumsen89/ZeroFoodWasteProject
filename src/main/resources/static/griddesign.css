@@ -57,6 +57,7 @@ height: 75vh;
 .leftcolumn {
     grid-area: leftcolumn;
    position:relative; left: 20px;
+    width: 100px;
 }
 
 
