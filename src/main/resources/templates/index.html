@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO SITE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" th:href="@{griddesign.css}" href="../static/griddesign.css">
     <link rel="stylesheet" th:href="@{btn.css}" href="../static/btn.css">
     <link rel="stylesheet" th:href="@{dropdownmenu.css}" href="../static/dropdownmenu.css">
@@ -22,11 +21,10 @@
             <p>Right</p>
         </div>
 
-        <div class="leftcolumn" >
+        <div class="nav" >
             <iframe height="100%" width="100%" th:src="@{dropdownmenu}" style="border: none;" title="iframedropdown" scrolling="no"></iframe>
         </div>
         <div class="middlecolumn" >
-            <iframe th:src="@{indexcontent}" height="100%" width="100%" style="border: none" name="middle"></iframe>
 
         </div>
         <div class="rightcolumn" >Column</div>
