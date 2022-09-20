@@ -3,9 +3,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO SITE</title>
-    <link rel="stylesheet" th:href="@{griddesign.css}" href="../static/griddesign.css">
-    <link rel="stylesheet" th:href="@{btn.css}" href="../static/btn.css">
-    <link rel="stylesheet" th:href="@{dropdownmenu.css}" href="../static/dropdownmenu.css">
+    <link rel="stylesheet" th:href="@{/css/griddesign.css}" href="../static/css/griddesign.css">
+    <link rel="stylesheet" th:href="@{/css/btn.css}" href="../static/css/btn.css">
+    <link rel="stylesheet" th:href="@{/css/dropdownmenu.css}" href="../static/css/dropdownmenu.css">
+    <link rel="stylesheet" th:href="@{/css/homebtn.css}" href="../static/css/homebtn.css">
     <style>
         .nav-container{
             width: 100%;
@@ -44,7 +45,13 @@
 
     <div class="grid-container">
         <div class="leftheader">
-            <iframe height="100%" width="100%" th:src="@{homebutton}" style="border: none;" title="iframehomebutton" scrolling="no"></iframe>
+           <!-- <iframe height="100%" width="100%" th:src="@{homebutton}" style="border: none;" title="iframehomebutton" scrolling="no"></iframe>-->
+            <a href="index" target="middle" >
+                <div class="moveImg">
+                    <img class="top" src="/images/Logo_Danmark.png" style="width: 30%; height: auto"><br>
+                    <img class="bottom" src="/images/Logo_Mod_Madspild.png" style="width: 30%; height: auto">
+                </div>
+            </a>
         </div>
         <div class="middleheader">
             <h1>Demo website</h1>
